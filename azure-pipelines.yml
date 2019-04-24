@@ -66,6 +66,6 @@ jobs:
     workingDirectory: 'esy-bash'
   - script: npm install -g esy@0.5.6
     displayName: 'Install esy'
-  - bash: esy
+  - script: esy
     displayName: 'esy (with modified esy-bash)'
     env: ESY__ESY_BASH=$(Build.SourcesDirectory): esy-bash
