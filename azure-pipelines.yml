@@ -28,5 +28,8 @@ jobs:
     workingDirectory: 'esy-bash'
   - script: npm install -g esy@0.5.6
     displayName: 'Install esy'
-  - script: env ESY__ESY_BASH=$(Build.SourcesDirectory)/esy-bash esy
+  - powershell: |
+      $env:ESY__ESY_BASH = "$(Build.SourcesDirectory)/esy-bash"
+      esy
+      
     displayName: 'esy (with modified esy-bash)'
