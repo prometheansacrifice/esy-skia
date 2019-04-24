@@ -30,7 +30,10 @@ jobs:
     displayName: 'npm i'
     workingDirectory: 'esy-bash'
   - script: npm run build-cygwin
-    displayName: 'Checkout python branch'
+    displayName: 'npm run build-cygwin'
+    workingDirectory: 'esy-bash'
+  - script: npm run package-cygwin
+    displayName: 'npm run package-cygwin'
     workingDirectory: 'esy-bash'
   - script: node ./postinstall.js
     displayName: 'esy-bash postinstall'
