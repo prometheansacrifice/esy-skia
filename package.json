@@ -16,8 +16,11 @@
   },
   "homepage": "https://skia.org",
   "esy": {
-    "buildsInSource": true,
+    "buildEnv": {
+      "PATH": "#{self.target_dir : $PATH}"
+    },
     "build": [
+      "cp /usr/bin/python2.7.exe #{self.target_dir}/python.exe",
       [
         "python",
         "tools/git-sync-deps"
