@@ -59,5 +59,14 @@ jobs:
   steps:
   - template: .ci/use-node.yml
   - template: .ci/restore-build-cache.yml
-  - template: .ci/esy-build-steps.yml
-  - template: .ci/publish-build-cache.yml
+  - script: git clone https://github.com/bryphe/esy-bash
+    displayName: 'Cloning esy-bash'
+  - script: git checkout prometheansacrifice/bundle-python2.7
+    displayName: 'Checkout python branch'
+    workingDirectory: 'esy-bash'
+  - script: npm install -g esy@0.5.6
+    displayName: 'Install esy'
+  - bash: esy
+    displayName: 'esy (with modified esy-bash)'
+    env:
+     - ESY__ESY_BASH=$(Build.SourcesDirectory): esy-bash
