@@ -20,6 +20,7 @@
       "PATH": "#{self.target_dir : $PATH}"
     },
     "build": [
+      "ls /usr/bin",
       "cp /usr/bin/python2.7.exe #{self.target_dir}/python.exe",
       [
         "python",
