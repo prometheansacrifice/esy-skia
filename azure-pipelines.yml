@@ -29,6 +29,9 @@ jobs:
   - script: npm i
     displayName: 'npm i'
     workingDirectory: 'esy-bash'
+  - script: esy
+    displayName: 'esy'
+    workingDirectory: 'esy-bash/re'
   - script: npm run build-cygwin
     displayName: 'npm run build-cygwin'
     workingDirectory: 'esy-bash'
