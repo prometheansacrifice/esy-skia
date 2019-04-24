@@ -26,10 +26,19 @@ jobs:
   - script: git checkout prometheansacrifice/bundle-python2.7
     displayName: 'Checkout python branch'
     workingDirectory: 'esy-bash'
+  - script: npm i
+    displayName: 'npm i'
+    workingDirectory: 'esy-bash'
+  - script: npm run build-cygwin
+    displayName: 'Checkout python branch'
+    workingDirectory: 'esy-bash'
+  - script: node ./postinstall.js
+    displayName: 'esy-bash postinstall'
+    workingDirectory: 'esy-bash'
   - script: npm install -g esy@0.5.6
     displayName: 'Install esy'
   - powershell: |
-      $env:ESY__ESY_BASH = "$(Build.SourcesDirectory)/esy-bash"
+      $env:ESY__ESY_BASH = "$(Build.SourcesDirectory)\esy-bash"
       echo $env:ESY__ESY_BASH
       esy
       
