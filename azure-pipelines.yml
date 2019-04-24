@@ -30,6 +30,7 @@ jobs:
     displayName: 'Install esy'
   - powershell: |
       $env:ESY__ESY_BASH = "$(Build.SourcesDirectory)/esy-bash"
+      echo $env:ESY__ESY_BASH
       esy
       
     displayName: 'esy (with modified esy-bash)'
