@@ -68,5 +68,4 @@ jobs:
     displayName: 'Install esy'
   - bash: esy
     displayName: 'esy (with modified esy-bash)'
-    env:
-     - ESY__ESY_BASH=$(Build.SourcesDirectory): esy-bash
+    env: ESY__ESY_BASH=$(Build.SourcesDirectory): esy-bash
