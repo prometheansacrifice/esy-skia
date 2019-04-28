@@ -19,9 +19,9 @@
     "buildEnv": {
       "PATH": "#{self.target_dir : $PATH}"
     },
+    "buildsInSource": true,
     "build": [
-      "ls /usr/bin",
-      "cp /usr/bin/python2.7.exe #{self.target_dir}/python.exe",
+      "cp /usr/bin/python ./python.exe",
       [
         "python",
         "tools/git-sync-deps"
