@@ -25,7 +25,8 @@
       [
         "bin/gn",
         "gen",
-        "#{self.target_dir}/out/Debug"
+        "#{self.target_dir}/out/Debug",
+        "--args=skia_use_system_libjpeg_turbo=true extra_cflags=[\"-I#{esy-libjpeg-turbo.install / 'include'}\"] extra_ldflags=[\"-L#{esy-libjpeg-turbo.lib}\", \"-ljpeg\" ]"
       ],
       [
         "ninja.exe",
@@ -52,6 +53,7 @@
     }
   },
   "dependencies": {
-    "@esy-cross/ninja-build": "^1.8.2001"
+    "@esy-cross/ninja-build": "^1.8.2001",
+    "esy-libjpeg-turbo": "prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947"
   }
 }
