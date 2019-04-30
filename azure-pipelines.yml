@@ -21,7 +21,7 @@ jobs:
   # - script: sudo apt-get install -y libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libegl1-mesa-dev mesa-utils mesa-utils-extra ragel libgtk-3-dev
   - bash: |
       wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-      apt-get install clang-7 lldb-7 lld-7
+      sudo apt install clang-7 lldb-7 lld-7
     displayName: 'Installing Clang and Clang++'
   - template: .ci/use-node.yml	
   - template: .ci/restore-build-cache.yml	
