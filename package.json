@@ -21,22 +21,7 @@
     },
     "buildsInSource": true,
     "build": [
-      "cp /usr/bin/python ./python.exe",
-      [
-        "python",
-        "tools/git-sync-deps"
-      ],
-      [
-        "bin/gn",
-        "gen",
-        "#{self.target_dir}/out/Release",
-        "--args=is_debug=false"
-      ],
-      [
-        "ninja.exe",
-        "-C",
-        "#{self.target_dir}/out/Release"
-      ]
+      "bash ./esy/build.sh #{os} #{esy-libjpeg-turbo.install}"
     ],
     "install": [
       [
@@ -57,6 +42,7 @@
     }
   },
   "dependencies": {
-    "@esy-cross/ninja-build": "^1.8.2001"
+    "@esy-cross/ninja-build": "^1.8.2001",
+    "esy-libjpeg-turbo": "prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947"
   }
 }
