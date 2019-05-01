@@ -23,7 +23,7 @@ jobs:
       cat .ci/clang.sources.lst >> /etc/apt/sources.list
       wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
       sudo apt-get update
-      sudo apt-get install clang-8 lldb-8 lld-8
+      sudo apt-get install clang-7 lldb-7 lld-7
       
     displayName: 'Installing Clang and Clang++'
   - template: .ci/use-node.yml	
