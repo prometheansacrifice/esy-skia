@@ -8,6 +8,8 @@ then
     cp /usr/bin/python ./python.exe
 fi
 
+cp `which python2` ./python
+
 python tools/git-sync-deps
 
 if [[ $OS == 'windows' ]]
