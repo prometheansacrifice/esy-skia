@@ -63,9 +63,6 @@ jobs:
     displayName: 'Install esy'
   - script: git clone https://github.com/bryphe/esy-bash
     displayName: 'Cloning esy-bash'
-  - script: git checkout prometheansacrifice/bundle-python2.7
-    displayName: 'Checkout python branch'
-    workingDirectory: 'esy-bash'
   - script: npm i
     displayName: 'npm i'
     workingDirectory: 'esy-bash'
