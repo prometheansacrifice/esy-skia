@@ -43,6 +43,6 @@
   },
   "dependencies": {
     "@esy-cross/ninja-build": "^1.8.2001",
-    "esy-libjpeg-turbo": "prometheansacrifice/libjpeg-turbo#ef073c0cec14165d233d0b086117fc1cf0b5ac1a"
+    "esy-libjpeg-turbo": "prometheansacrifice/libjpeg-turbo#50e8e32c48"
   }
 }
