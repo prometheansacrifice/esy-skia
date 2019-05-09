@@ -31,7 +31,8 @@
         "#{self.lib}"
       ],
       [
-        "esy/create-pkg-config.sh", "#{os}"
+        "esy/create-pkg-config.sh",
+        "#{os}"
       ]
     ],
     "exportedEnv": {

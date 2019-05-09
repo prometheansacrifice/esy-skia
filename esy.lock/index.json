@@ -1,5 +1,5 @@
 {
-  "checksum": "4204383c1f38964ed5e1e7e7a40f38bd",
+  "checksum": "765ea932e218efddce6c936e8080efd5",
   "root": "esy-skia@link-dev:./package.json",
   "node": {
     "esy-skia@link-dev:./package.json": {
@@ -13,7 +13,7 @@
       },
       "overrides": [],
       "dependencies": [
-        "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947@d41d8cd9",
+        "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#50e8e32c48@d41d8cd9",
         "@esy-cross/ninja-build@1.8.2001@d41d8cd9"
       ],
       "devDependencies": []
@@ -34,34 +34,33 @@
       "dependencies": [],
       "devDependencies": []
     },
-    "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947@d41d8cd9": {
+    "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#50e8e32c48@d41d8cd9": {
       "id":
-        "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947@d41d8cd9",
+        "esy-libjpeg-turbo@github:prometheansacrifice/libjpeg-turbo#50e8e32c48@d41d8cd9",
       "name": "esy-libjpeg-turbo",
-      "version":
-        "github:prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947",
+      "version": "github:prometheansacrifice/libjpeg-turbo#50e8e32c48",
       "source": {
         "type": "install",
-        "source": [
-          "github:prometheansacrifice/libjpeg-turbo#c6d5fcff3bd3c1e57e889471d90e7a21642e4947"
-        ]
+        "source": [ "github:prometheansacrifice/libjpeg-turbo#50e8e32c48" ]
       },
       "overrides": [],
       "dependencies": [
         "esy-nasm@github:prometheansacrifice/esy-nasm#6240bdbb164476558d3738812fbbe48f66cc904a@d41d8cd9",
-        "esy-cmake@0.3.5@d41d8cd9",
+        "esy-cmake@github:prometheansacrifice/esy-cmake#2a47392def755074afbf63eb794b94135476b1d1@d41d8cd9",
         "@esy-cross/ninja-build@1.8.2001@d41d8cd9"
       ],
       "devDependencies": []
     },
-    "esy-cmake@0.3.5@d41d8cd9": {
-      "id": "esy-cmake@0.3.5@d41d8cd9",
+    "esy-cmake@github:prometheansacrifice/esy-cmake#2a47392def755074afbf63eb794b94135476b1d1@d41d8cd9": {
+      "id":
+        "esy-cmake@github:prometheansacrifice/esy-cmake#2a47392def755074afbf63eb794b94135476b1d1@d41d8cd9",
       "name": "esy-cmake",
-      "version": "0.3.5",
+      "version":
+        "github:prometheansacrifice/esy-cmake#2a47392def755074afbf63eb794b94135476b1d1",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://registry.npmjs.org/esy-cmake/-/esy-cmake-0.3.5.tgz#sha1:2df0bdfe9317fbcded5f463fca1f346464494c7a"
+          "github:prometheansacrifice/esy-cmake#2a47392def755074afbf63eb794b94135476b1d1"
         ]
       },
       "overrides": [],

@@ -9,7 +9,7 @@ then
 fi
 
 python tools/git-sync-deps
-
+ln -s third_party/externals/gyp tools/gyp
 if [[ $OS == 'windows' ]]
 then
     bin/gn gen $cur__target_dir/out/Release --args='is_debug=false' || exit -1
